@@ -19,6 +19,13 @@
 ========                                                     ========
 =====================================================================
 =====================================================================
+-- setup tailwind
+-- TODO: Here is a list of things needing to be done in my setup:
+-- get the fancy line at the bottom
+-- copilot dismiss
+-- sessionizer?
+-- oil?
+-- nvim-tree?
 
 What is Kickstart?
 
@@ -583,7 +590,8 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- tsserver = {},
+        tsserver = {},
+        tailwindcss = {},
         --
 
         lua_ls = {
@@ -786,13 +794,13 @@ require('lazy').setup({
     -- change the command in the config to whatever the name of that colorscheme is.
     --
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'folke/tokyonight.nvim',
+    'catppuccin/nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
+      vim.cmd.colorscheme 'catppuccin'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
