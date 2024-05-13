@@ -259,6 +259,21 @@ require('lazy').setup({
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua: require('gitsigns').setup({ ... })
   --
   -- See `:help gitsigns` to understand what the configuration keys do
+<<<<<<< HEAD
+  { -- Adds git related signs to the gutter, as well as utilities for managing changes
+    'lewis6991/gitsigns.nvim',
+    opts = {
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
+      current_line_blame = true,
+    },
+  },
+=======
   -- { -- Adds git related signs to the gutter, as well as utilities for managing changes
   --   'lewis6991/gitsigns.nvim',
   --   opts = {
@@ -272,6 +287,7 @@ require('lazy').setup({
   --     current_line_blame = true,
   --   },
   -- },
+>>>>>>> refs/remotes/origin/master
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
@@ -592,7 +608,10 @@ require('lazy').setup({
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
+<<<<<<< HEAD
+=======
         tailwindcss = {},
+>>>>>>> refs/remotes/origin/master
         --
 
         lua_ls = {
@@ -913,8 +932,13 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
+<<<<<<< HEAD
+  require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+=======
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+>>>>>>> refs/remotes/origin/master
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -942,6 +966,7 @@ require('lazy').setup({
       lazy = '💤 ',
     },
   },
+  -- just a git test
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
