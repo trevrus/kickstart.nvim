@@ -376,7 +376,8 @@ require('lazy').setup({
         -- },
         pickers = {
           find_files = {
-            find_command = { 'rg', '--files', '--hidden', '--glob', '!.git/*' },
+            -- This will allow Telescope to show dotfiles and files listed in .gitignore.
+            find_command = { 'rg', '--files', '--hidden', '--no-ignore', '--glob', '!.git/*' },
           },
         },
         extensions = {
