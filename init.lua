@@ -20,12 +20,12 @@
 =====================================================================
 =====================================================================
 -- setup tailwind
--- TODO: Here is a list of things needing to be done in my setup:
 -- get the fancy line at the bottom
+-- oil?
+-- nvim-tree? installed neo-tree; it was the default one with kickstarter
+-- TODO: Here is a list of things needing to be done in my setup:
 -- copilot dismiss
 -- sessionizer?
--- oil?
--- nvim-tree?
 -- neogit to replace fugitive?
 
 What is Kickstart?
