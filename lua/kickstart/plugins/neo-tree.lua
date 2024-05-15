@@ -11,13 +11,13 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', { desc = 'NeoTree reveal' } },
+    { '<C-_>', ':Neotree reveal<CR>', { desc = 'NeoTree reveal' } }, -- this is the same as <C-/>, as I'll use it
   },
   opts = {
     filesystem = {
       window = {
         mappings = {
-          ['\\'] = 'close_window',
+          ['<C-_>'] = 'close_window',
         },
       },
     },
