@@ -374,27 +374,9 @@ require('lazy').setup({
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
         --   },
         -- },
-        -- NOTE: not working, try again later
-        --
-        -- This eliminates pnpm.yaml and package-lock.json from polluting search results
-        -- defaults = {
-        --   vimgrep_arguments = {
-        --     'rg',
-        --     '--color=never',
-        --     '--no-heading',
-        --     '--with-filename',
-        --     '--line-number',
-        --     '--column',
-        --     '--smart-case',
-        --     '--hidden',
-        --     '--',
-        --     '--exclude',
-        --     'pnpm.yaml',
-        --   },
-        -- },
         pickers = {
           find_files = {
-            -- This will allow Telescope to show dotfiles and files listed in .gitignore.
+            -- This will allow Telescope to show dotfiles and files listed in .gitignore and .ignore.
             find_command = { 'rg', '--files', '--hidden', '--glob', '!.git/*' },
           },
         },
