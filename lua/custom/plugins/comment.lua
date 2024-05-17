@@ -11,7 +11,9 @@ return {
     local ts_context_commentstring = require 'ts_context_commentstring.integrations.comment_nvim'
 
     -- enable comment
-    -- comment.config.lua.pre_hook = ts_context_commentstring.create_pre_hook()
+    -- I couldn't make this work without setting all the default values; The only one I needed to change was the pre_hook
+    -- I also wasn't able to set the enable_autocmd to false without getting an error
+    -- All in all, it works, but not as docs suggest
     comment.setup {
       padding = true,
       sticky = true,
