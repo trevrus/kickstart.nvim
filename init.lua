@@ -2,11 +2,13 @@
 -- get the fancy line at the bottom
 -- oil?
 -- nvim-tree? installed neo-tree; it was the default one with kickstarter
--- TODO: Here is a list of things needing to be done in my setup:
 -- copilot dismiss
+-- TODO: Here is a list of things needing to be done in my setup:
 -- sessionizer?
--- neogit to replace fugitive?
 -- create keymappings for quickfix list :cnext, :cprev
+-- fix tsx autocomplete -- component suggestions addd () instead of />
+-- get html auto closing tags
+--
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -428,7 +430,7 @@ require('lazy').setup({
 
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
-          map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+          map('<leader>wy', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace S[y]mbols')
 
           -- Rename the variable under your cursor.
           --  Most Language Servers support renaming across files, etc.
